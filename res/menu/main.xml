@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+   	  >
+
+    <item
+        android:id="@+id/insert_expense_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/insert_expense_MI"/>
+    
+    <item
+        android:id="@+id/insert_income_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/insert_income_MI"/>
+    
+    <item
+        android:id="@+id/show_expenses_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/show_expenses_MI"/>
+    
+    <item
+        android:id="@+id/show_incomes_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/show_incomes_MI"/>
+    
+    <item
+        android:id="@+id/category_manager_MI"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:title="@string/category_manager_MI"/>
+    
+    <item
+        android:id="@+id/budget_manager_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/budget_manager_MI"/>
+    
+    <item
+        android:id="@+id/export_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/export_MI"/>
+    
+    <item
+        android:id="@+id/about_MI"
+        android:showAsAction="ifRoom|withText"
+        android:title="@string/about_MI"/>
+    
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <com.google.ads.AdView
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:id="@+id/export_select_period_ad"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+ 		  ads:adUnitId="ca-app-pub-2833983884268240/1063562413"
+          ads:adSize="SMART_BANNER"/>        
+    
+    <RadioButton android:id="@+id/expradio_this_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expradio_this_month"
+        android:onClick="onExpPeriodRadioButtonClicked"/>
+    
+    <RadioButton android:id="@+id/expradio_last_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expradio_last_month"
+        android:onClick="onExpPeriodRadioButtonClicked"/>
+    
+    <RadioButton android:id="@+id/expradio_this_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expradio_this_year"
+        android:onClick="onExpPeriodRadioButtonClicked"/>
+    
+    <RadioButton android:id="@+id/expradio_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/expradio_all"
+        android:onClick="onExpPeriodRadioButtonClicked"/>
+
+</RadioGroup>

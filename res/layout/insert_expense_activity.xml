@@ -1,0 +1,78 @@
+<ScrollView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+ 	  	tools:context=".InsertExpense">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  	android:orientation="vertical">
+ 	
+     <com.google.ads.AdView
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:id="@+id/insert_expense_ad"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+ 		  ads:adUnitId="ca-app-pub-2833983884268240/1063562413"
+          ads:adSize="SMART_BANNER"/>
+ 	
+        
+	<AutoCompleteTextView
+	   android:id="@+id/newExpenseNameText"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:hint="@string/newExpenseName_actv"
+	   android:ems="10" >
+	
+	   <requestFocus />
+	    
+	</AutoCompleteTextView>
+    
+    
+    <EditText
+        android:id="@+id/newItemPriceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/newExpenseValue_et"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+	<Spinner
+        android:id="@+id/itemCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+		
+		
+	<Button
+	    android:id="@+id/expenseDateButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="showDatePickerDialogInsertExpense"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok_button"
+            android:onClick="insert" />
+
+	    <Button
+	        android:id="@+id/cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/cancel_button"
+	        android:onClick="cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

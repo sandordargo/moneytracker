@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical" >
+    
+    <com.google.ads.AdView
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:id="@+id/show_expense_ad"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+ 		  ads:adUnitId="ca-app-pub-2833983884268240/1063562413"
+          ads:adSize="SMART_BANNER"/>        
+   
+	<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/showExpenseItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/showExpenseItemHeader"
+        android:layout_gravity="fill"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/showExpenseValue"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/showExpenseValueHeader"
+        android:layout_gravity="fill"
+        android:textSize="15sp" 
+        />
+
+
+    <TextView
+        android:id="@+id/showExpenseDate"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@string/purchaseDateHeader"
+        android:layout_gravity="fill"
+        android:textSize="15sp" 
+         />
+    
+   	<Spinner
+        android:id="@+id/selectCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:textSize="15sp" />
+
+</LinearLayout>
+</LinearLayout>

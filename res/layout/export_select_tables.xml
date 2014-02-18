@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+     
+    
+    <EditText
+        android:id="@+id/showTableName"
+        android:layout_width="250dp"
+        android:layout_height="47dp"
+        android:hint=""  
+        android:background="@android:color/transparent" 
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/export_table_CB"
+        android:layout_height="47dp"
+        android:layout_width="wrap_content" />
+
+</LinearLayout>

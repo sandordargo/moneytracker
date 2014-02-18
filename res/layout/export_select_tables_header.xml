@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+   
+    <com.google.ads.AdView
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:id="@+id/export_table_selector_ad"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+ 		  ads:adUnitId="ca-app-pub-2833983884268240/1063562413"
+          ads:adSize="SMART_BANNER"/>        
+    
+	<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView
+        android:id="@+id/showTableNameHeader"
+        android:layout_width="150dp"
+        android:layout_height="47dp"
+        android:text="@string/showTableNameHeader"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/showToBeExportedHeader"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:text="@string/showToBeExportedHeader"
+        android:textSize="20sp" 
+         />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+	<com.google.ads.AdView
+          xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+          android:id="@+id/manage_budget_ad"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+ 		  ads:adUnitId="ca-app-pub-2833983884268240/1063562413"
+          ads:adSize="SMART_BANNER"/>            
+    
+    <LinearLayout
+        	android:orientation="horizontal" 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content">
+    		
+	    <Button
+		    android:id="@+id/previousMonthBudget"
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:layout_width="0dp"
+		   	android:layout_height="24dp"
+		   	android:layout_weight="2"
+		    android:onClick="previousMonthBudget"
+		    android:text="@string/previousMonthBudget" 
+		    android:layout_gravity="left"/>
+
+	    <Button
+		    android:id="@+id/chooseBudgetMonth"
+		    style="?android:attr/buttonBarButtonStyle"
+		    android:layout_width="0dp"
+		   	android:layout_height="24dp"
+		   	android:layout_weight="2"
+		    android:onClick="chooseBudgetMonth"
+		    android:text="@string/chooseBudgetMonth" 
+		    android:layout_gravity="center_horizontal"/>
+	
+	    <Button
+		    android:id="@+id/nextMonthBudget"
+		    style="?android:attr/buttonBarButtonStyle" 
+		    android:layout_width="0dp"
+		   	android:layout_height="24dp"
+		   	android:layout_weight="2"
+		    android:onClick="nextMonthBudget"
+		    android:text="@string/nextMonthBudget" 
+		    android:layout_gravity="right"/>
+        
+    </LinearLayout>
+    <LinearLayout     
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content">
+	    
+        <TextView
+	        android:id="@+id/showBudgetItemNameHeader"
+	        android:layout_width="120dp"
+	        android:layout_height="47dp"
+	        android:text="@string/showBudgetItemNameHeader"
+	        android:textSize="15sp" />
+	
+	    <TextView
+	        android:id="@+id/showBudgetItemValueHeader"
+	        android:layout_width="60dp"
+	        android:layout_height="47dp"
+	        android:text="@string/showBudgetItemValueHeader"
+	        android:textSize="15sp" />
+	
+		<TextView
+	        android:id="@+id/showBudgetItemSpentPercHeader"
+	        android:layout_width="40dp"
+	        android:layout_height="47dp"
+			android:text="@string/showBudgetItemSpentPercHeader"
+	        android:textSize="15sp" />
+		
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+     
+ 	<TextView
+        android:id="@+id/showItem"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@+id/showItem"
+        android:textSize="20sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/showValue"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@+id/showValue"
+        android:textSize="20sp" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/showDate"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="@+id/showDate"
+        android:textSize="20sp" >
+    </TextView>
+    
+    <Button
+    	android:id="@+id/deleteIncomeFromList"
+    	android:layout_width="24dp"
+    	android:layout_height="24dp"
+    	android:onClick="deleteIncomeFromList"
+    	android:background="@drawable/del_button" />
+    
+
+</LinearLayout>
